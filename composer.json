@@ -1,0 +1,22 @@
+{
+    "name": "maswahyu/yii2-adminlte",
+    "description": "Yii 2 AdminLTE 3.x Asset Bundle",
+    "authors": [
+        {
+            "name": "Nur Wahyudin",
+            "email": "wahyu1790@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "almasaeed2010/adminlte": "v3.0.0-alpha.2",
+        "rmrevin/yii2-fontawesome": "~3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "maswahyu\\adminlte\\": "src/"
+        }
+    }
+}
