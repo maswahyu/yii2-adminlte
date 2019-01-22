@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
  * AdminLTE asset bundle. Uses AdminLTE 3.x
  * @since 0.1
  */
-class AdminLTEAsset extends AssetBundle
+class AdminLteAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
 

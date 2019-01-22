@@ -1,8 +1,8 @@
 <?php
 use yii\helpers\Html;
-use maswahyu\adminlte\assets\AdminLTEAsset;
+use maswahyu\adminlte\assets\AdminLteAsset;
 
-$assetBundle = AdminLTEAsset::register($this);
+$assetBundle = AdminLteAsset::register($this);
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
 ?>
 <?php $this->beginPage() ?>
