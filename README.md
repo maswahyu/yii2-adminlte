@@ -31,7 +31,7 @@ This Asset Bundle can be customized in config `assetManager`.
 ```
         'assetManager' => [
             'bundles' => [
-                'maswahyu\adminlte\assets\AdminLTEAsset' => [
+                'maswahyu\adminlte\assets\AdminLteAsset' => [
                     'logo' => 'logo.png',
                     'navbarVariant' => 'navbar-light bg-white',
                     'sidebarMenu' => [
@@ -54,7 +54,7 @@ You can change the navbar, sidebar, and brand variant as provided by AdminLTE by
 ```
         'assetManager' => [
             'bundles' => [
-                'maswahyu\adminlte\assets\AdminLTEAsset' => [
+                'maswahyu\adminlte\assets\AdminLteAsset' => [
                     'navbarVariant' => 'navbar-light bg-white',
                     'sidebarVariant' => 'sidebar-dark-primary',
                     'brandVariant' => 'bg-white',
@@ -76,7 +76,7 @@ There are three menu placements available. Each menu inherits `\yii\widgets\Menu
 ```
         'assetManager' => [
             'bundles' => [
-                'maswahyu\adminlte\assets\AdminLTEAsset' => [
+                'maswahyu\adminlte\assets\AdminLteAsset' => [
                     'navbarMenuRight' => [
                         ['label' => '<i class="fa fa-sign-out-alt"></i> Logout', 'url' => ['site/logout']],
                     ],
