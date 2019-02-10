@@ -2,6 +2,10 @@
 use yii\helpers\Html;
 ?>
 <footer class="main-footer">
-    <div class="float-right d-none d-sm-block"><b>Version</b> 3.0.0-alpha</div>
-    <strong>Copyright &copy; 2014-2018 <a href="<?= Html::encode($this->title) ?>"><?= Html::encode($this->title) ?></a>.</strong> All rights reserved.
+
+    <?php if (!empty($assetBundle->version)): ?>
+        <div class="float-right d-none d-sm-block"><b>Version</b> <?= $assetBundle->version ?></div>
+    <?php endif ?>
+
+    <strong><?= (!empty($assetBundle->copyright)) ? $assetBundle->copyright : null ?> <a href="<?= Html::encode($this->title) ?>"><?= Html::encode($this->title) ?></a>.</strong> All rights reserved.
 </footer>

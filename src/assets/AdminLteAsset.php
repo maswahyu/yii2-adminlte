@@ -50,4 +50,22 @@ class AdminLteAsset extends AssetBundle
     public $sidebarMenu = [
         ['icon' => 'fa fa-tachometer-alt', 'label' => 'Dashboard', 'url' => ['site/index']],
     ];
+
+    /**
+     * Whether to show logged in user badge on the sidebar. Default to true.
+     * @var boolean
+     */
+    public $showUserOnSidebar = true;
+
+    /**
+     * Use this option to show your app version. Will be displayed on right side of the footer.
+     * @var string
+     */
+    public $version;
+
+    /**
+     * Use this option to customize your copyright text on the footer.
+     * @var STRING
+     */
+    public $copyright;
 }
