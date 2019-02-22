@@ -36,20 +36,15 @@ class AdminLteAsset extends AssetBundle
 
     public $logo;
 
-    public $navbarMenuLeft = [
-        ['label' => '<i class="fa fa-bars"></i>', 'url' => '#', 'options' => ['data-widget' => 'pushmenu']],
-        ['label' => 'Home', 'url' => ['site/index']],
-        ['label' => 'About', 'url' => ['site/about']],
-        ['label' => 'Contact', 'url' => ['site/contact']],
-    ];
+    public $navbarId = 'navbar';
 
-    public $navbarMenuRight = [
-        ['label' => '<i class="fa fa-sign-out-alt"></i> Logout', 'url' => ['site/logout']],
-    ];
+    public $bodyId = 'body';
 
-    public $sidebarMenu = [
-        ['icon' => 'fa fa-tachometer-alt', 'label' => 'Dashboard', 'url' => ['site/index']],
-    ];
+    public $sidebarId = 'sidebar';
+
+    public $contentId = 'content';
+
+    public $footerId = 'footer';
 
     /**
      * Whether to show logged in user badge on the sidebar. Default to true.
@@ -68,4 +63,31 @@ class AdminLteAsset extends AssetBundle
      * @var STRING
      */
     public $copyright;
+
+    /**
+     * Navbar menu on the left side
+     * @var array
+     */
+    public $navbarMenuLeft = [
+        ['label' => '<i class="fa fa-bars"></i>', 'url' => '#', 'options' => ['data-widget' => 'pushmenu']],
+        ['label' => 'Home', 'url' => ['site/index']],
+        ['label' => 'About', 'url' => ['site/about']],
+        ['label' => 'Contact', 'url' => ['site/contact']],
+    ];
+
+    /**
+     * Navbar menu on the right side
+     * @var array
+     */
+    public $navbarMenuRight = [
+        ['label' => '<i class="fa fa-sign-out-alt"></i> Logout', 'url' => ['site/logout']],
+    ];
+
+    /**
+     * Sidebar menu items
+     * @var array
+     */
+    public $sidebarMenu = [
+        ['icon' => 'fa fa-tachometer-alt', 'label' => 'Dashboard', 'url' => ['site/index']],
+    ];
 }

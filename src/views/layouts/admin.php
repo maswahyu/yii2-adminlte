@@ -18,7 +18,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
 
     <?php $this->head() ?>
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini" id="<?= $assetBundle->bodyId ?>">
 <?php $this->beginBody() ?>
 
     <div class="wrapper">
@@ -34,11 +34,15 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
         ]) ?>
 
         <?= $this->render('parts/content', [
-            'directoryAsset' => $directoryAsset,
+            'assetBundle' => $assetBundle,
             'content' => $content,
+            'directoryAsset' => $directoryAsset,
         ]) ?>
 
-        <?= $this->render('parts/footer', ['directoryAsset' => $directoryAsset]) ?>
+        <?= $this->render('parts/footer', [
+            'assetBundle' => $assetBundle,
+            'directoryAsset' => $directoryAsset,
+        ]) ?>
 
     </div>
 

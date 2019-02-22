@@ -23,7 +23,7 @@ use yii\widgets\Breadcrumbs;
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" id="<?= $assetBundle->contentId ?>">
         <?= $content ?>
     </section>
 </div>

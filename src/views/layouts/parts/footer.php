@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 ?>
-<footer class="main-footer">
+<footer class="main-footer" id="<?= $assetBundle->footerId ?>">
 
     <?php if (!empty($assetBundle->version)): ?>
         <div class="float-right d-none d-sm-block"><b>Version</b> <?= $assetBundle->version ?></div>

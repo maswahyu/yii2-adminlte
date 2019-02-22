@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use maswahyu\adminlte\widgets\NavbarMenu;
 ?>
-<nav class="main-header navbar navbar-expand <?= $assetBundle->navbarVariant ?> border-bottom">
+<nav class="main-header navbar navbar-expand <?= $assetBundle->navbarVariant ?> border-bottom" id="<?= $assetBundle->navbarId ?>">
     <!-- Left navbar links -->
     <?= NavbarMenu::widget([
         'items' => $assetBundle->navbarMenuLeft,

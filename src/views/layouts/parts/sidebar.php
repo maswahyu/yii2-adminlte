@@ -10,7 +10,7 @@ use maswahyu\adminlte\widgets\Menu;
         <span class="brand-text font-weight-light"><?= Yii::$app->name ?></span>
     </a>
 
-    <div class="sidebar">
+    <div class="sidebar" id="<?= $assetBundle->sidebarId ?>">
 
         <?php if ($assetBundle->showUserOnSidebar): ?>
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
