@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 ?>
 <div class="content-wrapper">
+    <?php if (!$assetBundle->disableContentHeader): ?>
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -21,6 +22,7 @@ use yii\widgets\Breadcrumbs;
             </div>
         </div>
     </section>
+    <?php endif ?>
 
     <!-- Main content -->
     <section class="content" id="<?= $assetBundle->contentId ?>">

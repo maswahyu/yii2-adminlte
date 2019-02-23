@@ -46,6 +46,8 @@ class AdminLteAsset extends AssetBundle
 
     public $footerId = 'footer';
 
+    public $disableContentHeader = false;
+
     /**
      * Whether to show logged in user badge on the sidebar. Default to true.
      * @var boolean
