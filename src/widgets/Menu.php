@@ -32,7 +32,7 @@ class Menu extends \yii\widgets\Menu
     /**
      * @inheritdoc
      */
-    public $linkTemplate = '<a class="nav-link" href="{url}">{icon} <p>{label} {icon-right}</p></a>';
+    public $linkTemplate = '<a class="nav-link {activeCssClass}" href="{url}">{icon} <p>{label} {icon-right}</p></a>';
 
     /**
      * @inheritdoc
@@ -58,6 +58,7 @@ class Menu extends \yii\widgets\Menu
 
         $template = ArrayHelper::getValue($item, 'template', isset($item['url']) ? $this->linkTemplate : $this->labelTemplate);
         $replacements = [
+            '{activeCssClass}' => $item['active'] ? $this->activeCssClass : null,
             '{label}' => strtr($this->labelTemplate, ['{label}' => $item['label'],]),
             '{icon}' => empty($item['icon']) ? $this->defaultIconHtml : '<i class="nav-icon ' . $item['icon'] . '"></i> ',
             '{icon-right}' => empty($item['icon-right']) ? $this->defaultIconHtml : '<i class="right ' . $item['icon-right'] . '"></i> ',
@@ -77,8 +78,8 @@ class Menu extends \yii\widgets\Menu
             $options = array_merge($this->itemOptions, ArrayHelper::getValue($item, 'options', []));
             $tag = ArrayHelper::remove($options, 'tag', 'li');
             $class = [];
-            if ($item['active']) {
-                $class[] = $this->activeCssClass;
+            if ($item['active'] && !empty($item['items'])) {
+                $class[] = 'menu-open';
             }
             if ($i === 0 && $this->firstItemCssClass !== null) {
                 $class[] = $this->firstItemCssClass;

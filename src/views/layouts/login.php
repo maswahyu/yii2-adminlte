@@ -4,7 +4,6 @@ use maswahyu\adminlte\assets\AdminLteAsset;
 use maswahyu\adminlte\assets\iCheckAsset;
 
 $assetBundle = AdminLteAsset::register($this);
-$iCheckAsset = iCheckAsset::register($this);
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
 ?>
 <?php $this->beginPage() ?>

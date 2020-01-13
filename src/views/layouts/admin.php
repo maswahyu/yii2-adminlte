@@ -18,7 +18,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
 
     <?php $this->head() ?>
 </head>
-<body class="hold-transition sidebar-mini" id="<?= $assetBundle->bodyId ?>">
+<body class="<?= $assetBundle->bodyClass ?>" id="<?= $assetBundle->bodyId ?>">
 <?php $this->beginBody() ?>
 
     <div class="wrapper">

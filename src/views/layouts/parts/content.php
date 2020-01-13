@@ -4,7 +4,7 @@ use yii\widgets\Breadcrumbs;
 ?>
 <div class="content-wrapper">
     <?php if (!$assetBundle->disableContentHeader): ?>
-    <section class="content-header">
+    <section class="<?= $assetBundle->contentHeaderCssClass ?>">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
@@ -25,7 +25,7 @@ use yii\widgets\Breadcrumbs;
     <?php endif ?>
 
     <!-- Main content -->
-    <section class="content" id="<?= $assetBundle->contentId ?>">
+    <section class="<?= $assetBundle->contentCssClass ?>" id="<?= $assetBundle->contentCssId ?>">
         <?= $content ?>
     </section>
 </div>
