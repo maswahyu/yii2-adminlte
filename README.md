@@ -32,7 +32,7 @@ This Asset Bundle can be customized in config `assetManager`.
         'assetManager' => [
             'bundles' => [
                 'maswahyu\adminlte\assets\AdminLteAsset' => [
-                    'logo' => 'logo.png',
+                    'brandLogo' => 'logo.png',
                     'navbarVariant' => 'navbar-light bg-white',
                     'sidebarMenu' => [
                         ['icon' => 'fa fa-tachometer-alt', 'label' => 'Dashboard', 'url' => ['site/index']],
