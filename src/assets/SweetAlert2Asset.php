@@ -18,6 +18,6 @@ class SweetAlert2Asset extends AssetBundle
     public $js = ['sweetalert2.all.min.js'];
 
     public $depends = [
-        'maswahyu\adminlte\assets\AdminLTEAsset',
+        'maswahyu\adminlte\assets\AdminLteAsset',
     ];
 }

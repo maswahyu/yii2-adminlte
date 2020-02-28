@@ -18,6 +18,6 @@ class iCheckAsset extends AssetBundle
     public $js = ['icheck.min.js'];
 
     public $depends = [
-        'maswahyu\adminlte\assets\AdminLTEAsset',
+        'maswahyu\adminlte\assets\AdminLteAsset',
     ];
 }
