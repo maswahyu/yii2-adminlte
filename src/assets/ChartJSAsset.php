@@ -10,23 +10,20 @@ use yii\base\Exception;
  * AdminLTE asset bundle. Uses AdminLTE 3.x
  * @since 0.1
  */
-class AdminLteAsset extends AdminAsset
+class ChartJsAsset extends AdminAsset
 {
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    public $sourcePath = '@vendor/almasaeed2010/adminlte/plugins/chart.js';
 
     public $css = [
-        'css/adminlte.min.css',
-        '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
-        '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700',
+        'Chart.min.css',
     ];
 
     public $js = [
-        'js/adminlte.min.js',
+        'Chart.min.js',
     ];
 
     public $depends = [
         'maswahyu\adminlte\assets\BootstrapJsAsset',
-        'maswahyu\adminlte\assets\ChartJSAsset',
         'rmrevin\yii\fontawesome\AssetBundle',
         'yii\web\YiiAsset',
     ];
