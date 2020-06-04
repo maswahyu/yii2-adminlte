@@ -26,7 +26,6 @@ class AdminLteAsset extends AdminAsset
 
     public $depends = [
         'maswahyu\adminlte\assets\BootstrapJsAsset',
-        'rmrevin\yii\fontawesome\AssetBundle',
         'yii\web\YiiAsset',
     ];
 }

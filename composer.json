@@ -12,7 +12,6 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "almasaeed2010/adminlte": "^v3.0.0",
-        "rmrevin/yii2-fontawesome": "^3.5",
         "maswahyu/yii2-admin": "dev-master"
     },
     "autoload": {
