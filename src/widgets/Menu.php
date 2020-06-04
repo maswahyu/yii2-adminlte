@@ -61,7 +61,7 @@ class Menu extends \yii\widgets\Menu
             '{activeCssClass}' => $item['active'] ? $this->activeCssClass : null,
             '{label}' => strtr($this->labelTemplate, ['{label}' => $item['label'],]),
             '{icon}' => empty($item['icon']) ? $this->defaultIconHtml : '<i class="nav-icon ' . $item['icon'] . '"></i> ',
-            '{icon-right}' => empty($item['icon-right']) ? $this->defaultIconHtml : '<i class="right ' . $item['icon-right'] . '"></i> ',
+            '{icon-right}' => empty($item['icon-right']) ? null : '<i class="right ' . $item['icon-right'] . '"></i> ',
             '{url}' => isset($item['url']) ? Url::to($item['url']) : 'javascript:void(0);',
         ];
         return strtr($template, $replacements);
